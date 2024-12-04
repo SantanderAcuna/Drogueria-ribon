@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#FFA500">
+    <title>Droguerias Ribon</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Droguerias Ribon</h1>
+        <nav>
+            <ul class="menu">
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#carrito">Carrito</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h2>Productos</h2>
+    <main class="main">
+        <!-- Contenedor para productos -->
+        <section id="productos" class="productos">
+            <div id="producto-lista" class="producto-lista">
+                <!-- Aquí se cargarán dinámicamente los productos -->
+            </div>
+        </section>
+       
+
+        <!-- Contenedor del carrito -->
+        <section id="carrito" class="carrito">
+            <h2>Carrito de Compras</h2>
+            <div id="carrito-detalles" class="carrito-detalles"></div>
+            <form id="cliente-form">
+                <h3>Datos del Cliente</h3>
+                <label for="cliente-nombre">Nombre Completo:</label>
+                <input type="text" id="cliente-nombre" placeholder="Ingrese su nombre completo" required>
+
+                <label for="cliente-direccion">Dirección:</label>
+                <input type="text" id="cliente-direccion" placeholder="Ingrese su dirección" required>
+
+                <label for="cliente-telefono">Número de Contacto:</label>
+                <input type="text" id="cliente-telefono" placeholder="Ingrese su número de contacto" required>
+
+                <label for="cliente-indicaciones">Indicaciones (opcional):</label>
+                <textarea id="cliente-indicaciones" placeholder="Ejemplo: Casa color azul, cerca de la tienda tal"></textarea>
+
+                <label for="cliente-cambio">¿Requiere cambio? (Ingrese monto del billete):</label>
+                <input type="number" id="cliente-cambio" placeholder="Ejemplo: 50000">
+
+                <button type="button" id="finalizar-compra">Finalizar Compra</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>2024 Droguerias Ribon. © Todos los derechos reservados.</p>
+    </footer>
+    <script src="js/main.js" type="module"></script>
+</body>
+</html>
