@@ -124,6 +124,8 @@ h2 {
   height: auto;
   object-fit: cover;
   border-bottom: 2px solid var(--gris-claro);
+
+  
 }
 
 .producto h3 {
